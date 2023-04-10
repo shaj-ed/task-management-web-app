@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .font-unbound {
+    font-family: "Unbounded", cursive;
+  }
+
+  .h-full-custom {
+    height: calc(100vh - 76px);
+  }
+
+  .bg-opacity {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
